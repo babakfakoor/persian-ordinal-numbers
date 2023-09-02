@@ -1,0 +1,55 @@
+{
+  "name": "persian-ordinal-numbers",
+  "version": "1.0.0",
+  "description": "convert numbers to Persian ordinal numbers",
+  "main": "persianOrdinalNumbers.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=6.9.0",
+    "npm": ">= 3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babakfakoor/persian-ordinal-numbers.git"
+  },
+  "keywords": [
+    "number to letter",
+    "ordinal",
+    "persian",
+    "digits to letters",
+    "iranian"
+  ],
+  "author": "Babak Fakoor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babakfakoor/persian-ordinal-numbers/issues"
+  },
+  "homepage": "https://github.com/babakfakoor/persian-ordinal-numbers#readme",
+  "dependencies": {
+    "@babel/core": "^7.22.11",
+    "babel-jest": "^29.6.4",
+    "jest": "^29.6.4",
+    "num2persian": "^3.2.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.11",
+    "@babel/preset-env": "^7.22.14"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "!node_modules/"
+    ]
+  },
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}
